@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <title>
+        Registration form
+    </title>
+</head>
+
+<body>
+    <h2>Registration form</h2>
+
+    <form>
+        <div class="form-row align-items-left">
+            <div class="col-auto">
+                <label for="Firstname">First name</label>
+                <input type="text" class="form-control" id="Firstname" data-toggle="tooltip" title="Enter your first name">
+            </div>
+            <div class="col-auto">
+                <label for="Lastname">Last name</label>
+                <input type="text" class="form-control" id="Lastname" data-toggle="tooltip" title="Enter your last name">
+            </div>
+        </div>
+        <div class="form-row align-items-left">
+            <div class="col-auto">
+                <label for="Streetadress">Street adress</label>
+                <input type="text" class="form-control" id="Streetadress" data-toggle="tooltip" title="Enter street adress">
+            </div>
+        </div>
+        <div class="form-row align-items-left">
+            <div class="col-auto">
+                <label for="Postalcode">Postal code</label>
+                <input type="text" class="form-control" id="Postalcode" data-toggle="tooltip" title="Enter postal code">
+            </div>
+            <div class="col-auto">
+                <label for="Country">Country</label>
+                <input type="text" class="form-control" id="Country" data-toggle="tooltip" title="Enter country">
+            </div>
+        </div>
+        <div class="form-row align-items-left">
+            <div class="col-auto">
+                <label for="Company">Company</label>
+                <input type="text" class="form-control" id="Company" data-toggle="tooltip" title="Enter company">
+            </div>
+            <div class="col-auto">
+                <label for="Email1">Email address</label>
+                <input type="email" class="form-control" id="Email1" data-toggle="tooltip" title="Enter email">
+            </div>
+        </div>
+        <p>Payment method</p>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="paymentmethod" id="paymentmethod" value="option1" checked>
+            <label class="form-check-label" for="paymentmethod">
+             Mastercard
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="paymentmethod" id="paymentmethod2" value="option2">
+            <label class="form-check-label" for="paymentmethod2">
+              Visa
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="paymentmethod" id="paymentmethod3" value="option3">
+            <label class="form-check-label" for="paymentmethod3">
+                  Billing
+                </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <script>
+            $(document).ready(function() {
+                $('[data-toggle="tooltip"]').tooltip();
+            });
+        </script>
+    </form>
+</body>
+
+</html>
